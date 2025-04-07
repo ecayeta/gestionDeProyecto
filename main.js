@@ -26,3 +26,4 @@ proyecto.agregarTarea(t3);
 
 proyecto.mostrarTareas();
 console.log(`Duracion Total: ${proyecto.getDuracion()}`);
+console.log(`Costo Total: $${proyecto.tareas.reduce((acum, tarea) => acum + tarea.getCosto(1000), 0)}`);
